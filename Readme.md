@@ -2,7 +2,7 @@
 
 ## Description:
 
-A simple Vagrantfile to setup an debian 11 box, install docker and docker-compose.
+A simple Vagrantfile to setup an debian 13 box, install docker and docker-compose.
 
 ## Usage:
 
@@ -21,42 +21,37 @@ Then let Vagrant create and provision the vms:
 Once everything is provisionned, you can ssh to the master node and start playing with the swarm:
 
    ```
-   vagrant ssh
    $ docker version
    Client: Docker Engine - Community
-    Version:           20.10.11
-    API version:       1.41
-    Go version:        go1.16.9
-    Git commit:        dea9396
-    Built:             Thu Nov 18 00:37:33 2021
+    Version:           29.2.1
+    API version:       1.53
+    Go version:        go1.25.6
+    Git commit:        a5c7197
+    Built:             Mon Feb  2 17:17:31 2026
     OS/Arch:           linux/amd64
     Context:           default
-    Experimental:      true
 
    Server: Docker Engine - Community
     Engine:
-     Version:          20.10.11
-     API version:      1.41 (minimum version 1.12)
-     Go version:       go1.16.9
-     Git commit:       847da18
-     Built:            Thu Nov 18 00:35:39 2021
+     Version:          29.2.1
+     API version:      1.53 (minimum version 1.44)
+     Go version:       go1.25.6
+     Git commit:       6bc6209
+     Built:            Mon Feb  2 17:17:31 2026
      OS/Arch:          linux/amd64
      Experimental:     false
     containerd:
-     Version:          1.4.12
-     GitCommit:        7b11cfaabd73bb80907dd23182b9347b4245eb5d
+     Version:          v2.2.1
+     GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
     runc:
-     Version:          1.0.2
-     GitCommit:        v1.0.2-0-g52b36a2
+     Version:          1.3.4
+     GitCommit:        v1.3.4-0-gd6d73eb8
     docker-init:
      Version:          0.19.0
      GitCommit:        de40ad0
-
-   $ docker-compose version
-   docker-compose version 1.29.2, build unknown
-   docker-py version: 5.0.3
-   CPython version: 3.9.2
-   OpenSSL version: OpenSSL 1.1.1k  25 Mar 2021
+  
+   $ docker compose version
+   Docker Compose version v5.0.2
    ```
 
 ## Credits:
